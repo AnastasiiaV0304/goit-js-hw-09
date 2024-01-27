@@ -5,20 +5,25 @@ body {
   box-sizing: border-box;
 }
 
+.gallery-item {
+  list-style: none;
+}
+
+.gallery-image:hover {
+  transform: scale(1.04);
+}
+
 .gallery {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin: 0;
   padding: 24px 156px;
+  flex-wrap: wrap;
+
   justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
 }
 
-.gallery-item {
-  list-style-type: none;
-  width: calc((100% - 48px) / 3);
-}
-
-.gallery-item:hover {
-  transform: scale(1.04);
+.gallery-image {
+  width: 360px;
+  height: 200px;
 }
